@@ -1,0 +1,176 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto+Slab);
+
+/* CSS RESET */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+strong {
+    font-weight: 700;
+}
+
+i {
+    font-style: italic;
+}
+/* END CSS RESET */
+
+html, body {
+	background: url(../img/paper.jpg) repeat;
+	font-family: 'Roboto Slab', serif;
+}
+
+#main {
+	width: 100%;
+	height: auto;
+	margin: 0 auto;
+  	float: left;
+}
+
+h2 {
+	font-size: 50px;
+	color: #706f6d;
+	margin-bottom: 30px;
+	text-decoration: underline;
+	font-weight: 600;
+	text-align: center;
+}
+
+#app {
+	padding: 10px;
+}
+
+.done-true {
+	text-decoration: line-through;
+	color: #c4c2c2;
+}
+
+ul {
+	list-style: none;
+	display: inline;
+}
+
+.list-holder {
+	width: 100%;
+	word-wrap:break-word;
+}
+
+.list {
+	font-size: 40px;
+	line-height: 40px;
+	color: #706f6d;
+	margin-bottom: 20px;
+	float: left;
+	clear: both;
+}
+
+.input-box {
+	width: 90%;
+	height: 50px;
+	font-size: 30px;
+	text-align: left;
+	float: left;
+	clear: both;
+}
+
+.regular-checkbox {
+    -webkit-appearance: none;
+    background-color: #fafafa;
+    border: 1px solid #cacece;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05);
+    padding: 9px;
+    border-radius: 3px;
+    display: inline-block;
+    position: relative;
+}
+
+.regular-checkbox:active, .regular-checkbox:checked:active {
+    box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px 1px 3px rgba(0,0,0,0.1);
+}
+ 
+.regular-checkbox:checked {
+    background-color: #e9ecee;
+    border: 1px solid #adb8c0;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05), inset 15px 10px -12px rgba(255,255,255,0.1);
+    color: #99a1a7;
+}
+
+.regular-checkbox:checked:after {
+    content: '\2714';
+    font-size: 14px;
+    position: absolute;
+    top: 0px;
+    left: 3px;
+    color: #99a1a7;
+}
+
+.big-checkbox {
+    padding: 18px;
+}
+ 
+.big-checkbox:checked:after {
+    font-size: 28px;
+    left: 6px;
+}
+
+#btn-container {
+	position: relative;
+	left: 50%;
+	margin-left: -105px;
+	width: 210px;
+	float: left;
+	clear: both;
+}
+
+.add-btn {
+	background: url(../img/plus.png) no-repeat;
+	width: 100px;
+	height: 100px;
+	border-style: none;
+}
+
+.clear-btn {
+	background: url(../img/minus.png) no-repeat;
+	width: 100px;
+	height: 100px;
+	border-style:none;
+}

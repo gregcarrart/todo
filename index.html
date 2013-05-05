@@ -1,0 +1,45 @@
+<!doctype html>
+<html ng-app>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
+        <title>Checklist</title>
+        <link rel="stylesheet" href="css/main.css">
+        <script src="lib/angular/angular.min.js"></script>
+        <script src="http://documentcloud.github.com/underscore/underscore-min.js"></script>
+        <script src="js/main.js"></script>
+    </head>
+    <body>
+
+        <div id="main">
+	        <div ng-controller="TodoCtrl" id="app">
+	        	
+	        	<h2>Total To Do: {{getTotalTodos()}}</h2>
+
+	        	<div class="list-holder">
+		        	<ul>
+		        		<li ng-repeat="todo in todos" class="list">
+		        			<input type="checkbox" ng-model="todo.done" class="regular-checkbox big-checkbox">
+		        			<span class="done-{{todo.done}}">{{todo.text}}</span>
+		        		</li>
+		        	</ul>
+	        	</div>
+
+        		<form class="form-horizontal">
+        			
+        			<input type="text" ng-model="formTodoText" ng-model-instant class="input-box"> 
+
+        			<div id="btn-container">
+			        	<button class="add-btn" ng-click="addTodo()"></button>
+			        	<button class="clear-btn" ng-click="clearCompleted()"></button>
+		        	</div>
+    		
+	        	</form>
+
+	        	
+	        </div>
+        </div>
+    </body>
+</html>
